@@ -1,0 +1,14 @@
+$(function(){
+    $(".menu>ul").hide();
+    $(".menu").each(function(i){
+        $(this).hover(function(){
+            $("span").eq(i).css("color","red");
+            $(".menu>ul").eq(i).show();
+        },function(){
+            $("span").eq(i).css("color","#725334");
+            $(".menu>ul").eq(i).hide();
+        })
+    })
+    /*canvas*/
+    /*$("canvas").*/
+})
